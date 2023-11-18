@@ -1,8 +1,10 @@
 from tictactoe import Board
 
 
+# используется декларативная парадигма так используется сторонний модуль tictactoe,
+# процедурная  так код оформлен ы виде метода
+# помимо этого модуль tictactoe использует ООП - выделена сущность Board и методы к ней
 def game(board):
-
     i = 0
     print(board)
     print(f'Первый ходит крестик\n')
@@ -34,5 +36,6 @@ def game(board):
             print("Некоректное значение позиции")
 
 
-desk = Board((3, 3), 3)
-game(desk)
+if __name__ == "__main__":
+    desk = Board((3, 3), 3)
+    game(desk)

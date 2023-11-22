@@ -1,8 +1,11 @@
+from functools import reduce
+
+
 def pirson(first: list, second: list):
-    def chislitel(first, second):
+    def chislitel(list_1, list_2):
         temp = 0
-        for itemA, itemB in zip(first, second):
-            temp += ((itemA - sum(first) / len(first)) * (itemB - sum(second) / len(second)))
+        for itemA, itemB in zip(list_1, second):
+            temp += ((itemA - sum(list_1) / len(list_1)) * (itemB - sum(list_2) / len(list_2)))
         return temp
 
     def func(spisok: list):

@@ -1,11 +1,8 @@
 def pirson(first: list, second: list):
-    aver_first = sum(first) / len(first)
-    aver_second = sum(second) / len(second)
-
     def chislitel(first, second):
         temp = 0
         for itemA, itemB in zip(first, second):
-            temp += ((itemA - aver_first) * (itemB - aver_second))
+            temp += ((itemA - sum(first) / len(first)) * (itemB - sum(second) / len(second)))
         return temp
 
     def func(spisok: list):
@@ -13,6 +10,7 @@ def pirson(first: list, second: list):
         for itemA in spisok:
             temp += (itemA - sum(spisok) / len(spisok)) ** 2
         return temp
+
     return chislitel(first, second) / (func(first) * func(second)) ** 0.5
 
 

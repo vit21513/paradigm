@@ -13,7 +13,6 @@ def pirson(first: list, second: list):
         for itemA in spisok:
             temp += (itemA - sum(spisok) / len(spisok)) ** 2
         return temp
-
     return chislitel(first, second) / (func(first) * func(second)) ** 0.5
 
 

@@ -1,5 +1,4 @@
 def pirson(first: list, second: list):
-
     aver_first = sum(first) / len(first)
     aver_second = sum(second) / len(second)
 
@@ -11,10 +10,10 @@ def pirson(first: list, second: list):
 
     def res(spisok: list):
         temp = 0
-        for itemA in first:
-            print((itemA - aver_first)**2)
-            temp += (itemA - aver_first) *2
+        for itemA in spisok:
+            temp += (itemA - sum(spisok) / len(spisok)) ** 2
         return temp
+
     return chislitel(first, second) / (res(first) * res(second)) ** 0.5
 
 

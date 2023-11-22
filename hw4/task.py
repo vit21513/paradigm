@@ -1,4 +1,4 @@
-from functools import reduce
+# Коэффициент корреляции пирсона
 
 
 def pirson(first: list, second: list):

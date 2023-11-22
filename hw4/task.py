@@ -4,7 +4,7 @@
 def pirson(first: list, second: list):
     def chislitel(list_1, list_2):
         temp = 0
-        for itemA, itemB in zip(list_1, second):
+        for itemA, itemB in zip(list_1, list_2):
             temp += ((itemA - sum(list_1) / len(list_1)) * (itemB - sum(list_2) / len(list_2)))
         return temp
 

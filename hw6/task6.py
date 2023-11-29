@@ -10,7 +10,7 @@ def find_index(lst1: list, num: int):
         return lst1.index(list(filter(lambda x: x == num, lst_find))[0])
 
     if num not in lst1:
-        return
+        return -1
     if num == lst1[half]:
         return lst1.index(num)
     elif num < lst1[half]:
@@ -21,5 +21,5 @@ def find_index(lst1: list, num: int):
 
 if __name__ == "__main__":
     lst = [3, 6, 7, 8, 11, 14, 23, 66, 77, 88, 99, 123,234]
-    print(find_index(lst, num=99))
+    print(find_index(lst, num=990))
 
